@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  padding: 32px 24px;
+}
+
+.title {
+  text-align: center;
+  color: #f76b1c;
+  margin-bottom: 24px;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.item-form,
+.edit-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.item-form input,
+.edit-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #fda085;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.item-form button,
+.edit-form button {
+  background: #f76b1c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.item-form button:hover,
+.edit-form button:hover {
+  background: #fda085;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #f6d365;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: bold;
+  color: #f76b1c;
+  min-width: 100px;
+}
+
+.item-desc {
+  flex: 1;
+  color: #333;
+}
+
+.edit-btn,
+.delete-btn {
+  background: #fff;
+  color: #f76b1c;
+  border: 1px solid #f76b1c;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-left: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.edit-btn:hover {
+  background: #f6d365;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #f76b1c;
+  color: #fff;
+}
